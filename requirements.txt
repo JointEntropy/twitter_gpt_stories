@@ -1,0 +1,5 @@
+git+https://github.com/mmabrouk/chatgpt-wrapper
+pyyaml==6.0
+marshmallow_dataclass
+loguru==0.6.0
+redis
