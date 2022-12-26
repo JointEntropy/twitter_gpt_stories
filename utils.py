@@ -14,11 +14,20 @@ class ChatGPTConfigSchema:
 class StorageConfigSchema:
     queue_key: str
 
+@dataclass
+class TwitterConfigSchema:
+    API_KEY: str
+    API_SECRET_KEY: str
+    BEARER_TOKEN: str
+    ACCESS_KEY: str
+    ACCESS_SECRET: str
+
 
 @dataclass
 class ConfigSchema:
     chat_gpt: ChatGPTConfigSchema
     storage: StorageConfigSchema
+    twitter: TwitterConfigSchema
 
 
 config_schema = marshmallow_dataclass.class_schema(ConfigSchema)()

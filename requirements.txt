@@ -3,3 +3,4 @@ pyyaml==6.0
 marshmallow_dataclass
 loguru==0.6.0
 redis
+tweepy==4.12.1
